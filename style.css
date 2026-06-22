@@ -1,4 +1,4 @@
-/* VARIABLES DE DISEÑO (Para cambiar colores fácilmente) */
+/* VARIABLES DE DISEÑO  */
 :root {
     --bg-main: #0a192f;
     --bg-secondary: #112240;
@@ -74,7 +74,7 @@ body {
     padding: 0 25px;
 }
 
-/* HERO SECTION (MÁQUINA DE ESCRIBIR) */
+/* HERO SECTION */
 .hero-section {
     min-height: calc(100vh - 80px);
     display: flex;
@@ -220,18 +220,18 @@ body {
 .experience-timeline {
     display: flex;
     flex-direction: column;
-    gap: 25px; /* Mantiene la misma separación que usas en el grid de proyectos */
+    gap: 25px; 
 }
 
 .job-card {
-    background-color: var(--bg-secondary); /* Mismo fondo de tus tarjetas */
+    background-color: var(--bg-secondary); 
     padding: 30px;
     border-radius: 6px;
-    border-left: 3px solid var(--bg-main); /* Un sutil borde izquierdo por defecto */
+    border-left: 3px solid var(--bg-main); 
     transition: var(--transition);
 }
 
-/* Efecto hover brutal alineado con tu estilo */
+/* Efecto hover */
 .job-card:hover {
     transform: translateX(5px); /* Se mueve hacia la derecha en lugar de hacia arriba */
     border-left-color: var(--accent); /* Resalta el borde con tu verde turquesa eléctrico */
@@ -270,13 +270,13 @@ body {
 
 .job-details li {
     font-size: 0.95rem;
-    color: #a8b2d1; /* El mismo color suave que usas en la descripción de proyectos */
+    color: #a8b2d1; 
     margin-bottom: 10px;
     display: flex;
     align-items: flex-start; /* Alinea la flecha arriba si el texto tiene varias líneas */
 }
 
-/* Reutilizamos el mismo estilo de viñeta que creaste en Skills */
+/* Reutilizamos el mismo estilo de viñeta creado en Skills */
 .job-details li::before {
     content: "▹";
     color: var(--accent);
@@ -363,7 +363,7 @@ body {
 .contact-section {
     text-align: center;
     max-width: 650px;
-    margin: 120px auto 150px auto; /* Más espacio vertical para que respire al final */
+    margin: 120px auto 150px auto; 
     padding: 0 20px;
 }
 
@@ -373,10 +373,6 @@ body {
     margin-bottom: 40px;
     line-height: 1.6;
 }
-
-/*.contact-section p {
-    margin-bottom: 30px;
-}*/
 
 .contact-section .btn-email {
     margin-bottom: 50px;
@@ -415,7 +411,7 @@ body {
 }
 
 .contact-item span {
-    color: var(--accent); /* Los íconos brillan con tu turquesa eléctrico */
+    color: var(--accent); 
 }
 
 .contact-item:hover {
@@ -443,6 +439,6 @@ body {
 /* RESPONSIVE (MEDIA QUERIES) */
 @media (max-width: 768px) {
     .navbar { padding: 0 20px; }
-    .navbar nav { display: none; } /* En un paso posterior se puede hacer un menú Hamburguesa */
+    .navbar nav { display: none; }
     .section-title::after { width: 100px; }
 }
